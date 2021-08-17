@@ -1,0 +1,63 @@
+@use '../abstracts' as *;
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 111rem;
+	height: 15rem;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	position: relative;
+	background: var(--very-light-grey);
+	z-index: 9;
+	@include breakpoint(phone) {
+		height: 10.4rem;
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 4.2rem;
+		@include breakpoint(phone) {
+			display: none;
+			flex-direction: column;
+			background: var(--grayish-dark-blue);
+			width: 22.3rem;
+			top: 10.4rem;
+			position: absolute;
+			padding: 4rem 0;
+			transform: translateY(-100%);
+			a {
+				color: var(--white);
+			}
+			&.active {
+				display: flex;
+				right: 5rem;
+				transform: translateY(0);
+			}
+		}
+	}
+}
+
+// Hamburger
+.fas {
+	display: none;
+	font-size: 2.8rem;
+	color: red;
+	color: var(--grayish-dark-blue);
+	position: absolute;
+	cursor: pointer;
+	z-index: 9;
+	right: 5rem;
+	top: 4rem;
+
+	@include breakpoint(phone) {
+		display: block;
+	}
+
+	&.active {
+		color: var(--grayish-dark-blue);
+	}
+}

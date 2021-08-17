@@ -20,14 +20,22 @@ h2 {
 
 h3 {
 	font-size: 3.2rem;
-line-height: 3.6rem;
-letter-spacing: -0.29px
+	line-height: 3.6rem;
+	letter-spacing: -0.29px;
 }
 
 a {
-	text-decoration: none;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	letter-spacing: 2px;
 	text-transform: uppercase;
-	&:hover {
-		cursor: pointer;
+	color: var(--grayish-dark-blue);
+	text-decoration: none;
+	cursor: pointer;
+	transform:  var(--animation-1);
+
+	&:hover,
+	&:focus {
+		color: var(--slightly-desaturated-cyan);
 	}
 }
