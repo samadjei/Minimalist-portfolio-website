@@ -1,6 +1,7 @@
 // @use 'abstracts/breakpoints';
 @use 'abstracts/mixins' as *;
 @use 'abstracts/variables' as *;
+@use 'abstracts/breakpoints' as *;
 
 @use 'base/reset' as *;
 @use 'base/typography' as *;
@@ -8,7 +9,6 @@
 @use 'component/buttons' as *;
 
 @use 'layout/footer' as *;
-@use 'layout/hero' as *;
 @use 'layout/navbar' as *;
 
 @use 'pages/homepage' as *;
@@ -31,6 +31,7 @@ body {
 	font-family: 'Public Sans', sans-serif;
 	font-size: 1.6rem;
 	background: var(--very-light-grey);
+	color: var(--dark-blue);
 }
 
 ul {
@@ -49,4 +50,11 @@ img {
 	margin: 0 auto;
 	padding: 0 2rem;
 	overflow: hidden;
+}
+
+section {
+	padding: 15rem 0;
+	@include breakpoint(tablet) {
+		padding: 9.6rem 0;
+	}
 }

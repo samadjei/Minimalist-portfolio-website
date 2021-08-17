@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Button } from './button';
+import { Button } from '../button';
 
 const Hero = () => {
 	return (
@@ -18,7 +18,7 @@ const Hero = () => {
 						</svg>
 					</div>
 					<Link href="/">
-						<Button className="btn hero__btn" buttonStyle="btn--primary" buttonSize="btn--desktop">
+						<Button className="btn hero__btn" buttonStyle="btn--primary" buttonSize="btn--hero">
 							About Me
 						</Button>
 					</Link>
