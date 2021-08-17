@@ -2,6 +2,7 @@ $breakpoints: (
 	'phone': 500px,
 	'tablet': 768px,
 	'tablet-xl': 960px,
+	'desktop': 1110px,
 );
 
 @mixin breakpoint($point) {
@@ -15,4 +16,4 @@ $breakpoints: (
 
 // @include breakpoint(tablet) {
 
-// })
+// }

@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 h1,
 h2,
 h3 {
@@ -10,6 +12,11 @@ h1 {
 	font-size: 5rem;
 	line-height: 5rem;
 	letter-spacing: -0.45px;
+	@include breakpoint(tablet) {
+		font-size: 4rem;
+		line-height: 4.2rem;
+		letter-spacing: -0.36px;
+	}
 }
 
 h2 {
@@ -32,7 +39,7 @@ a {
 	color: var(--grayish-dark-blue);
 	text-decoration: none;
 	cursor: pointer;
-	transform:  var(--animation-1);
+	transform: var(--animation-1);
 
 	&:hover,
 	&:focus {

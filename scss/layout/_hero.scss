@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.hero {
+	background-image: url('/images/homepage/desktop/image-homepage-hero@2x.jpg');
+	height: 60rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	@include breakpoint(tablet-xl) {
+		background-image: url('/images/homepage/tablet/image-homepage-hero@2x.jpg');
+	}
+	@include breakpoint(phone) {
+		background-image: url('/images/homepage/mobile/image-homepage-hero@2x.jpg');
+		background-size: contain;
+		width: 100%;
+	}
+
+	&__inner {
+		background: var(--very-light-grey);
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		text-align: left;
+		width: 445px;
+		height: 357px;
+		@include breakpoint(tablet) {
+			width: 514px;
+			height: 278px;
+		}
+	}
+
+	&--title {
+		width: 39rem;
+		@include breakpoint(phone) {
+			width: 31.1rem;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		cursor: pointer;
+	}
+}
