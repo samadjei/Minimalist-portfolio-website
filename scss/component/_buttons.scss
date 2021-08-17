@@ -2,7 +2,6 @@
 .btn {
 	display: inline-block;
 	font-weight: 700;
-	border-radius: 2.8rem;
 	border: none;
 	&:hover,
 	&:focus {
@@ -10,10 +9,6 @@
 	}
 }
 
-// btn placeholder
-%btn {
-	padding: 2rem 4rem;
-}
 
 // BUTTON STYLES
 
@@ -49,8 +44,8 @@
 
 // Desktop Button
 .btn--desktop {
-	width: 17.1rem;
-	height: 5.6rem;
+	width: 20rem;
+	height: 4.8rem;
 	margin: 0 auto;
 	// padding: 1.4rem 4.1rem;
 	font-size: 1.6rem;

@@ -1,0 +1,33 @@
+h1,
+h2,
+h3 {
+	font-family: 'Ibarra Real Nova';
+	font-weight: 700;
+	color: var(--grayish-dark-blue);
+}
+
+h1 {
+	font-size: 5rem;
+	line-height: 5rem;
+	letter-spacing: -0.45px;
+}
+
+h2 {
+	font-size: 4rem;
+	line-height: 4.2rem;
+	letter-spacing: -0.36px;
+}
+
+h3 {
+	font-size: 3.2rem;
+line-height: 3.6rem;
+letter-spacing: -0.29px
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		cursor: pointer;
+	}
+}
