@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { Button } from '../button';
+import { Button } from './button';
 
-const heroInterest = () => {
+const Interest = () => {
 	return (
 		<section className="interest">
 			<div className="interest__inner">
@@ -20,4 +20,4 @@ const heroInterest = () => {
 	);
 };
 
-export default heroInterest;
+export default Interest;
