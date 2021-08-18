@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.footer {
+	background: var(--grayish-dark-blue);
+	height: 8rem;
+	display: flex;
+	align-items: center;
+	@include breakpoint(phone) {
+		height: 35.4rem;
+		margin: auto;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include breakpoint(phone) {
+			flex-direction: column;
+			text-align: center;
+			gap: 4rem;
+		}
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: 4.8rem;
+		@include breakpoint(phone) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		gap: 4.2rem;
+		@include breakpoint(phone) {
+			flex-direction: column;
+			text-align: center;
+			gap: 3.2rem;
+		}
+	}
+
+	&--items {
+		color: var(--white);
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+	}
+}
