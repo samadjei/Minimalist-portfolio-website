@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/homepage/hero';
+import HeroInterest from '../components/homepage/heroInterest';
 import HomeAbout from '../components/homepage/homeAbout';
 
 const Homepage = () => {
@@ -7,6 +8,7 @@ const Homepage = () => {
 		<main className="container">
 			<Hero />
 			<HomeAbout />
+			<HeroInterest/>
 		</main>
 	);
 };

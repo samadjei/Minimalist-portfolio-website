@@ -64,7 +64,6 @@
 		background-size: cover;
 		@include breakpoint(tablet-xl) {
 			background-image: url('/images/homepage/desktop/image-homepage-profile.jpg');
-			width: 28.1rem;
 			background-position: right;
 		}
 		@include breakpoint(tablet) {
@@ -72,16 +71,92 @@
 			width: 100%;
 			background-position: center;
 		}
+		@include breakpoint(phone) {
+			width: 31.1rem;
+			height: 34.6rem;
+		}
 	}
 
 	&__content {
+		position: relative;
 		width: 35rem;
+
+		// Dividers
+		&::after {
+			content: '';
+			position: absolute;
+			top: -5rem;
+			right: 0;
+			height: 1px;
+			width: 100%;
+			background: var(--grayish-dark-blue);
+			opacity: 0.15;
+			@include breakpoint(tablet) {
+				top: 3.2rem;
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -5rem;
+			right: 0;
+			height: 1px;
+			width: 100%;
+			background: var(--grayish-dark-blue);
+			opacity: 0.15;
+		}
+
+		.body-1 {
+			padding-top: 2.8rem;
+		}
+
 		@include breakpoint(tablet-xl) {
 			width: 33.9rem;
+			padding-left: 6.9rem;
 		}
 		@include breakpoint(tablet) {
-			padding-top: 3.2rem;
+			padding-top: 6.5rem;
 			width: 100%;
+			padding-left: 0;
+		}
+	}
+}
+
+// Interest
+.interest {
+	padding-top: 0;
+
+	&__line {
+		display: block;
+		height: 1px;
+		width: 40%;
+		background-color: var(--grayish-dark-blue);
+		opacity: 0.15;
+		@include breakpoint(tablet-xl) {
+			width: 20%;
+		}
+		@include breakpoint(tablet) {
+			display: none;
+		}
+	}
+
+	&__title {
+		min-width: 35rem;
+		max-width: 35rem;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include breakpoint(phone) {
+			flex-direction: column;
+		}
+	}
+
+	.btn {
+		@include breakpoint(phone) {
+			margin-top: calc(2.4rem + 1.6rem);
 		}
 	}
 }
